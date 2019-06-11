@@ -24,7 +24,6 @@
     (native-inputs
      `(("asciidoc" ,asciidoc)
        ("pkg-config" ,pkg-config)
-       ("ruby" ,ruby)
        ("gcc" ,gcc-7)))
     (arguments
      `(#:make-flags
