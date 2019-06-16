@@ -8,7 +8,8 @@
   #:use-module (gnu packages text-editors))
 
 (define-public kakoune-dev
-  (package (inherit kakoune)
+  (package
+    (inherit kakoune)
     (name "kakoune-dev")
     (version "2019.06.07-git")
     (source
@@ -16,9 +17,9 @@
        (method git-fetch)
        (file-name (git-file-name name version))
        (uri
-         (git-reference
-           (url "https://github.com/mawww/kakoune.git")
-           (commit "09e1ec97a9d7925c9d4411f4f274919aeea1bf75")))
+        (git-reference
+         (url "https://github.com/mawww/kakoune.git")
+         (commit "09e1ec97a9d7925c9d4411f4f274919aeea1bf75")))
        (sha256
         (base32 "05in7g7czdjz2xdk2ai963a9via3dlsx04pyy3gr32dn1zgg7na5"))))
     (native-inputs
